@@ -1,0 +1,24 @@
+.demo-card-container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: ghostwhite;
+
+  .mat-card {
+    margin: 16px;
+    transform: translate(-50%, -50%);
+    //width: 350px;
+  }
+
+  img {
+    background-color: gray;
+  }
+}
+
+.demo-card-blue {
+  background-color: #b0becc;
+
+  .mat-card-actions {
+    display: flex;
+    flex-direction: column;
+  }
+}

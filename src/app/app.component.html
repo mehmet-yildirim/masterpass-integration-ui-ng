@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <span>{{title}}</span>
+  <span class="app-toolbar-filler"></span>
+  <a md-button routerLink="/bill-payment" routerLinkActive="active">Fatura Ödeme</a>
+  <a md-button routerLink="/tl-topup" routerLinkActive="active">TL Yükleme</a>
+</md-toolbar>
+<div layout="column">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,14 @@
+.container {
+
+  display: flex;
+  background-color: ghostwhite;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .mat-card {
+    margin: 16px;
+  }
+}
