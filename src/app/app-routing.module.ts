@@ -5,12 +5,14 @@ import {NotFoundComponent} from "./not-found.component";
 import {CardDemo} from "./demo/card.component";
 import {ButtonDemo} from "./demo/button.component";
 import {StepCheckMsisdnComponent} from "./step-check-msisdn/step-check-msisdn.component";
+import {InputDemo} from "app/demo/input.component";
 
 const appRoutes : Routes = [
   {path: '', redirectTo: 'check-msisdn', pathMatch: 'full'},
   {path: 'check-msisdn', component: StepCheckMsisdnComponent},
   {path: 'demo-card', component: CardDemo},
-  {path: 'demo-button', component: ButtonDemo}
+  {path: 'demo-button', component: ButtonDemo},
+  {path: 'demo-input', component: InputDemo}
   //{path: '**', component: NotFoundComponent}
 ]
 @NgModule({

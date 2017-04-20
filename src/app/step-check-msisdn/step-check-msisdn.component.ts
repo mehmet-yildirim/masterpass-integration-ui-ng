@@ -1,4 +1,5 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
+
 
 @Component({
   moduleId: module.id,
@@ -6,4 +7,22 @@ import {Component} from "@angular/core";
   templateUrl: 'step-check-msisdn.component.html',
   styleUrls: ['step-check-msisdn.component.scss']
 })
-export class StepCheckMsisdnComponent {}
+export class StepCheckMsisdnComponent {
+
+  @Input()
+  MFS: any;
+
+  @Input()
+  key: string;
+
+  progressing = false;
+
+  submitMsisdn() {
+    this.progressing = true;
+    console.log("test");
+  }
+
+  onSubmit() {
+    console.log("test2");
+  }
+}
